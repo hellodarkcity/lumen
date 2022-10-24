@@ -1,0 +1,44 @@
+{
+  "name": "AI art",
+  "description": "Discord bot generating collage of 9 images from given prompt",
+  "repository": "https://github.com/karafra/ai-art",
+  "logo": "https://raw.githubusercontent.com/karafra/ai-art/main/.github/images/logo.png",
+  "keywords": [
+    "node",
+    "typescript",
+    "discord",
+    "bot",
+    "ai",
+    "art",
+    "images",
+    "automation"
+  ],
+  "env": {
+    "TOKEN": {
+      "description": "Discord bot token",
+      "required": true
+    },
+    "AMQP_URL": {
+      "description": "URL TO YOUR AMQP INSTANCE",
+      "required": true
+    },
+    "MONGO_URI": {
+      "description": "URI to your mongodb database",
+      "required": true
+    },
+    "OPEN_API_TOKEN": {
+      "description": "Api key for open AI (only if you want to use /ai-story story command)",
+      "required": false
+    },
+    "SENTRY_DSN": {
+      "description": "DSN to sentry for error tracking",
+      "value": "https://4870ed33904f4d8fabe79658ceda6dee@o970705.ingest.sentry.io/6580305",
+      "required": true
+    },
+    "SENTRY_RELEASE_NAME": {
+      "description": "Release name for sentry to tract errors",
+      "value": "95a6d8c30618989809d643df2766ee7cc7d64a1a",
+      "required": true
+    }
+  }
+}

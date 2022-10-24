@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es2022",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "strict": false,
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "esModuleInterop": true,
+    "noFallthroughCasesInSwitch": false,
+    "typeRoots": ["src/types/typings", "node_modules/@types"],
+    "useDefineForClassFields": true,
+    "skipDefaultLibCheck": true
+  },
+  "include": ["src/**/*.ts", "src/types/typings/index.d.ts", "src/amqp/amqp.configuration.ts", "src/amqp/amqp.configuration"]
+}
