@@ -1,8 +1,8 @@
 {
-  "name": "ai-art",
+  "name": "@darkcity/lumen",
   "version": "2.1.5",
   "description": "Simple discord bot generating art from various AI models",
-  "author": "Karafra",
+  "author": "Alim Amen RA",
   "private": true,
   "license": "Apache 2.0",
   "scripts": {
