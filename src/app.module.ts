@@ -43,6 +43,7 @@ import { UtilitiesModule } from './utilities/utilities.module';
       useFactory: (configService: ConfigService) => ({
         token: configService.get<string>('discord.token'),
         discordClientOptions: {
+          shards: 'auto',
           intents: [
             Intents.FLAGS.GUILDS,
             Intents.FLAGS.GUILD_MESSAGES,
