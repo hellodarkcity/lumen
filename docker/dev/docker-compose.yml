@@ -42,6 +42,13 @@ services:
       - database
 
   discord-chat-bot:
+    env_file: 
+      - .env
+    environment:
+        - DISCORD_TOKEN=${TOKEN}
+        - OPEN_AI_TOKEN=${OPENAI_TOKEN}
+        - AMQP_URL=${AMQP_URL}
+        - MONGO_URI=${MONGO_URI}
     depends_on:
       mongo-express:
         condition: service_started
@@ -50,11 +57,6 @@ services:
     build:
       context: ../../
       dockerfile: ./docker/dev/Dockerfile
-      args:
-        - DISCORD_TOKEN=$TOKEN
-        - OPEN_AI_TOKEN="none"
-        - AMQP_URL=amqp://guest:guest@rabbitmq:5672
-        - MONGO_URI=mongodb://root:root@mongodb:27017?authSource=admin
     networks:
       - ai-art
       - database 
